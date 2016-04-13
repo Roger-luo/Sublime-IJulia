@@ -325,7 +325,7 @@ class Kernel(threading.Thread):
 
     def get_stdout(self):
         m = self.sub.recv()
-        data = m.content['data']
+        data = m.content['text']
         return data
 
     def get_error_reply(self):
